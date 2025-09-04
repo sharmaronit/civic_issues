@@ -13,7 +13,7 @@ type SocialShareProps = {
 export function SocialShare({ imageDataUrl, issueType, location, url }: SocialShareProps) {
   // Just use the ID from the URL path to construct the reportcard.fun URL
   const id = url.split('/').pop() // Get the last part of the path (the ID)
-  const shareUrl = `https://reportcard.fun/report/${id}`
+  const shareUrl = `https://civic-issues-6ep5.vercel.app/`
   
   // Common share text template
   const getShareText = (platform: string) => {
