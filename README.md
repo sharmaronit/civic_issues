@@ -4,10 +4,6 @@ A modern, citizen-focused web application that allows users to report local civi
 
 All generated reports are stored **for free** using GitHub Issues as a database, with automated analytics.
 
-[![App Screenshot](./public/images/screenshot.png)](./public/images/screenshot.png)
-*Note: Please replace `./public/images/screenshot.png` with an actual screenshot of your application.*
-
----
 
 ## ✨ Key Features
 
@@ -125,4 +121,5 @@ Project Link: [https://github.com/sharmaronit/civic_issues](https://github.com/s
 **Made with ❤️ by [@geminiproronit](https://twitter.com/geminiproronit)**
 
 ---
+
 
