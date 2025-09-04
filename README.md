@@ -1,33 +1,49 @@
-<<<<<<< HEAD
-# Civic Issue Certificate Generator
+Okay, here is a revised version of your README file in a more standard and readable format, combining the content and making it clear that your project is the Civic Issue Certificate Generator, which feeds into a database using GitHub Issues.
+
+---
+
+# 🏛️ Civic Issue Certificate Generator & Database
 
 A modern, citizen-focused web application that allows users to report local civic issues by generating a shareable "certificate." This project leverages photo metadata to automatically capture location and time, creating a powerful tool for civic awareness.
 
-![App Screenshot](./public/images/screenshot.png)
-*<p align="center">Note: Please replace this with a screenshot of your finished application!</p>*
+All generated reports are stored **for free** using GitHub Issues as a database, with automated analytics.
+
+[![App Screenshot](./public/images/screenshot.png)](./public/images/screenshot.png)
+*Note: Please replace `./public/images/screenshot.png` with an actual screenshot of your application.*
 
 ---
 
 ## ✨ Key Features
 
-- **Image-Based Reporting**: Upload a photo of a civic issue (like a pothole or garbage pile).
-- **Automatic Data Extraction**: Automatically reads EXIF data from photos to get the exact **GPS location** and **capture time**.
-- **Dynamic Certificate Generation**: Creates a professional-looking, shareable certificate on an HTML canvas with all the issue details.
-- **Glassmorphism UI**: A beautiful, modern "liquid glass" theme inspired by the latest design trends.
-- **Leader/Official Photos**: Option to include photos of public officials to tag them for awareness.
-- **Social Sharing**: Built-in functionality to share the generated certificate on social media.
-- **Multi-Language Support**: Easily adaptable for different languages.
+### Certificate Generator
+*   **📸 Image-Based Reporting**: Upload a photo of a civic issue (like a pothole or garbage pile).
+*   **📍 Automatic Data Extraction**: Reads EXIF data from photos to get the exact **GPS location** and **capture time**.
+*   **📜 Dynamic Certificate Generation**: Creates a professional-looking, shareable certificate on an HTML canvas with all the issue details.
+*   **✨ Glassmorphism UI**: A beautiful, modern "liquid glass" theme.
+*   **👨‍💼 Leader/Official Photos**: Option to include photos of public officials (e.g., PM Modi, Nitin Gadkari) for awareness.
+*   **🔗 Social Sharing**: Built-in functionality to share the generated certificate on social media.
+*   **🌐 Multi-Language Support**: Easily adaptable for different languages.
+
+### Free Database & Analytics
+*   **📊 Unlimited Storage**: Uses GitHub Issues as a free, scalable database for reports.
+*   **🤖 Automated Analytics**: GitHub Actions process data regularly.
+*   **📈 Real-time Dashboard**: (Planned/Link to dashboard if available) View live statistics and insights.
+*   **🏷️ Smart Categorization**: Automatic labeling of issues by type and location.
+*   **🔍 Search & Filter**: Leverages GitHub's built-in search capabilities.
+*   **💰 Zero Backend Cost**: Completely free infrastructure using GitHub.
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **UI Components**: [Shadcn/ui](https://ui.shadcn.com/), Radix UI
-- **Package Manager**: [pnpm](https://pnpm.io/)
-- **Deployment**: [Vercel](https://vercel.com/)
+*   **Framework**: [Next.js](https://nextjs.org/)
+*   **Language**: [TypeScript](https://www.typescriptlang.org/)
+*   **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+*   **UI Components**: [Shadcn/ui](https://ui.shadcn.com/), Radix UI
+*   **Package Manager**: [pnpm](https://pnpm.io/)
+*   **Deployment**: [Vercel](https://vercel.com/)
+*   **Database/Storage**: GitHub Issues
+*   **Automation**: GitHub Actions
 
 ---
 
@@ -38,31 +54,33 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### Prerequisites
 
 Make sure you have the following installed on your system:
-- [Node.js](https://nodejs.org/) (v18 or later recommended)
-- [pnpm](https://pnpm.io/installation)
-- [Git](https://git-scm.com/)
+
+*   [Node.js](https://nodejs.org/) (v18 or later recommended)
+*   [pnpm](https://pnpm.io/installation)
+*   [Git](https://git-scm.com/)
 
 ### Installation
 
 1.  **Clone the repository**
-    ```sh
+    ```bash
     git clone https://github.com/sharmaronit/civic_issues.git
     ```
 2.  **Navigate to the project directory**
-    ```sh
+    ```bash
     cd civic_issues
     ```
 3.  **Install dependencies**
-    ```sh
+    ```bash
     pnpm install
     ```
 4.  **Set up environment variables**
-    Create a new file named `.env.local` in the root of the project and add any necessary environment variables.
-    ```sh
-    cp .env.example .env.local
+    Create a new file named `.env.local` in the root of the project and add any necessary environment variables (refer to `.env.example` if it exists).
+    ```bash
+    cp .env.example .env.local # If .env.example exists
+    # Then edit .env.local
     ```
 5.  **Run the development server**
-    ```sh
+    ```bash
     pnpm dev
     ```
     Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -71,15 +89,18 @@ Make sure you have the following installed on your system:
 
 ## 🌐 Deployment
 
-This project is optimized for deployment on [Vercel](https://vercel.com/). Simply connect your GitHub repository to your Vercel account and follow the on-screen instructions. The application will be deployed automatically on every push to the `main` branch.
+This project is optimized for deployment on [Vercel](https://vercel.com/).
+
+1.  Push your code to your GitHub repository (e.g., `https://github.com/sharmaronit/civic_issues`).
+2.  Connect your GitHub repository to your Vercel account.
+3.  Follow the on-screen instructions to deploy.
+4.  The application will be deployed automatically on every push to the `main` branch.
 
 ---
 
 ## 🤝 How to Contribute
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 
 1.  **Fork the Project**
 2.  **Create your Feature Branch** (`git checkout -b feature/AmazingFeature`)
@@ -102,184 +123,9 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 Ronit Sharma - [@sharmaronit](https://github.com/sharmaronit)
 
 Project Link: [https://github.com/sharmaronit/civic_issues](https://github.com/sharmaronit/civic_issues)
-=======
-# 🏛️ Civic Issues Database
-
-A **free, unlimited database** for civic issues using GitHub Issues with automated analytics and community insights.
-
-## 🎯 What This Is
-
-This repository serves as a **centralized database** for all civic issue reports from (https://civic.issues). Instead of expensive backend infrastructure, we use **GitHub Issues as a free database** with automated analytics processing.
-
-## 🚀 Features
-
-- **📊 Unlimited Storage** - Store millions of civic reports for free
-- **🤖 Automated Analytics** - GitHub Actions process data every 6 hours
-- **📈 Real-time Dashboard** - Live statistics and insights
-- **🏷️ Smart Categorization** - Automatic labeling by issue type and location
-- **🔍 Search & Filter** - Built-in GitHub search capabilities
-- **📱 Community Insights** - Track trends and hotspots
-- **💰 Zero Cost** - Completely free forever!
-
-## 🏗️ How It Works
-
-### Data Flow
-```
-User generates certificate → GitHub Issues API → Issue created → Analytics processed → Dashboard updated
-```
-
-### Storage Structure
-Each civic report becomes a GitHub issue with:
-- **Title**: Issue type + location
-- **Body**: Structured data (type, location, date, notes, etc.)
-- **Labels**: Categorization (issue-type, location, year, etc.)
-- **State**: Open (active) or Closed (resolved)
-
-## 📊 Analytics Dashboard
-
-The system automatically generates:
-- **Total reports count**
-- **Issue type distribution**
-- **Geographic hotspots**
-- **User activity tracking**
-- **Daily activity trends**
-- **Top contributors**
-
-## 🛠️ Technical Stack
-
-- **Database**: GitHub Issues (unlimited, free)
-- **Automation**: GitHub Actions (2,000 free minutes/month)
-- **Processing**: Node.js scripts
-- **Analytics**: JSON data files
-- **Frontend**: React dashboard component
-
-## 🚀 Getting Started
-
-### For Users
-1. **Visit [reportcard.fun](https://civic.issues)**
-2. **Report a civic issue** (pothole, garbage, etc.)
-3. **Generate certificate** with photo and location
-4. **Your report is automatically stored** in this database
-5. **View community analytics** and insights
-
-### For Developers
-1. **Clone this repository**
-2. **Install dependencies**: `npm install`
-3. **Run analytics**: `npm run analytics`
-4. **View generated data** in `analytics/` folder
-
-## 📁 Repository Structure
-
-```
-civic-issues-database/
-├── .github/
-│   └── workflows/
-│       └── analytics.yml          # Automated analytics
-├── scripts/
-│   ├── analytics.js               # Data processing
-│   ├── create-summary.js          # Summary generation
-│   └── comment-analytics.js       # Issue comments
-├── analytics/                     # Generated analytics files
-│   ├── summary.json
-│   ├── issue-types.json
-│   ├── locations.json
-│   └── daily-activity.json
-├── package.json                   # Dependencies
-└── README.md                      # This file
-```
-
-## 🔧 Automation
-
-### GitHub Actions Workflow
-- **Triggers**: Every 6 hours, on issue events
-- **Processes**: All civic reports
-- **Generates**: Analytics and summaries
-- **Updates**: Dashboard data automatically
-
-### Analytics Generation
-- **Frequency**: Every 6 hours
-- **Data**: All issues in repository
-- **Output**: JSON files + Markdown summary
-- **Storage**: Committed to repository
-
-## 📈 Scaling
-
-### Current Limits
-- **GitHub Issues**: Unlimited
-- **GitHub Actions**: 2,000 minutes/month (free)
-- **Repository size**: 1GB (sufficient for metadata)
-- **API rate limits**: 5,000 requests/hour
-
-### Future Scaling
-- **Multiple repositories** for different regions
-- **Advanced analytics** with external tools
-- **Real-time processing** with webhooks
-- **Machine learning** insights
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. **Report Issues**: Use GitHub Issues for bugs or feature requests
-2. **Submit Pull Requests**: Improve the analytics or automation
-3. **Share Ideas**: Suggest new features or improvements
-4. **Spread the Word**: Tell others about this free civic tech solution
-
-## 🔒 Privacy & Security
-
-- **No personal information** stored
-- **Anonymous user IDs** only
-- **Public repository** for transparency
-- **Community-driven** data sharing
-- **Read-only access** for public data
-
-## 📞 Support
-
-- **GitHub Issues**: Use this repository for questions
-- **Documentation**: Check the [setup guide](GITHUB_SETUP.md)
-- **Community**: Engage with civic tech community
-- **Contributions**: Welcome pull requests and improvements
-
-## 🎉 Benefits
-
-### For Citizens
-- **Transparent data storage**
-- **Community insights**
-- **Issue tracking**
-- **Impact measurement**
-
-### For Government
-- **Data-driven decision making**
-- **Resource allocation**
-- **Accountability tracking**
-- **Policy influence**
-
-### For Community
-- **Data-driven advocacy**
-- **Government accountability**
-- **Resource allocation**
-- **Policy influence**
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **GitHub** for providing free unlimited storage
-- **GitHub Actions** for free automation
-- **Community** for contributing reports and insights
-- **Open source** community for inspiration
 
 ---
 
-**This system gives you enterprise-level analytics capabilities at $0/month cost!** 🎯
-
-*Made with ❤️ by [@geminiproronit](https://twitter.com/geminiproronit)*
+**Made with ❤️ by [@geminiproronit](https://twitter.com/geminiproronit)**
 
 ---
-
-**🔗 Links:**
-- 🌐 [Live App](https://civic.issues)
-#   c i v i c _ i s s u e s  
- 
