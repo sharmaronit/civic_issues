@@ -1,7 +1,3 @@
-Okay, here is a revised version of your README file in a more standard and readable format, combining the content and making it clear that your project is the Civic Issue Certificate Generator, which feeds into a database using GitHub Issues.
-
----
-
 # 🏛️ Civic Issue Certificate Generator & Database
 
 A modern, citizen-focused web application that allows users to report local civic issues by generating a shareable "certificate." This project leverages photo metadata to automatically capture location and time, creating a powerful tool for civic awareness.
@@ -129,3 +125,4 @@ Project Link: [https://github.com/sharmaronit/civic_issues](https://github.com/s
 **Made with ❤️ by [@geminiproronit](https://twitter.com/geminiproronit)**
 
 ---
+
